@@ -1,0 +1,1 @@
+Course Project (Django for advanced students on Stepik platform)
