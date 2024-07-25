@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from .models import Employee
 
-# Create your views here.
+
+def homePageView(request):
+    employees = Employee.objects.filter(about='Test')
+    return render(request, 'list.html', {'employees': employees})
